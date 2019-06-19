@@ -9,6 +9,26 @@
       UnityLoader.instantiate("unityContainer", "Build/Flappybara1.1.1.json");
     </script>
     <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCl3W4zWmBUOASDxPpWB2uWYfzyNLe0kqY",
+        authDomain: "flappybara-3cdfc.firebaseapp.com",
+        databaseURL: "https://flappybara-3cdfc.firebaseio.com",
+        projectId: "flappybara-3cdfc",
+        storageBucket: "flappybara-3cdfc.appspot.com",
+        messagingSenderId: "222321612188",
+        appId: "1:222321612188:web:f9e1b2839d5632e4"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </head>
   <body>
     <div id="unityContainer"></div>
